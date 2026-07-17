@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090a">
+  <title>E2S Sample Manager – Louis Bunt</title>
+  <meta name="description" content="E2S Sample Manager – moderner Sample-Library-Manager für die Korg Electribe 2 Sampler. Kostenloser Download.">
+  <link rel="icon" type="image/png" href="../../img/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="E2S Sample Manager">
+  <meta property="og:description" content="Moderner Sample-Library-Manager für die Korg Electribe 2 Sampler – mit Undo/Redo, Drag &amp; Drop, Batch-Bearbeitung und Dark Mode.">
+  <meta property="og:image" content="screenshot-main.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="../../index.html" class="topbar-logo"><span class="logo-dot"></span>Louis Bunt</a>
+    <button class="nav-toggle" aria-label="Menü öffnen">☰</button>
+  </div>
+  <div class="sidebar-backdrop"></div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="../../index.html" class="sidebar-logo"><span class="logo-dot"></span>Louis Bunt</a>
+      <div class="sidebar-group">
+        <div class="sidebar-group-title">Navigation</div>
+        <a href="../../index.html" class="nav-item"><span class="icon">🏠</span>Home</a>
+        <a href="../../musik.html" class="nav-item"><span class="icon">🎵</span>Musik</a>
+        <a href="../../downloads.html" class="nav-item active"><span class="icon">⬇️</span>Downloads</a>
+      </div>
+      <div class="sidebar-group">
+        <div class="sidebar-group-title">Socials</div>
+        <a href="https://open.spotify.com/artist/4r1x6EJdY0ZOuGLt7uO670" target="_blank" rel="noopener" class="nav-item"><span class="icon">🟢</span>Spotify</a>
+        <a href="https://www.youtube.com/channel/UCP1Vcv5Pa-ZbO9VVz2PK35g" target="_blank" rel="noopener" class="nav-item"><span class="icon">▶️</span>YouTube</a>
+      </div>
+      <div class="sidebar-footer">© 2026 Louis Bunt</div>
+    </aside>
+
+    <div class="content">
+      <main class="page">
+        <section class="hero hero-banner">
+          <h1>E2S Sample Manager</h1>
+          <p class="sub">Moderner Sample-Library-Manager für die Korg Electribe 2 Sampler –
+            funktioniert auch mit Hacktribe-Firmware.</p>
+          <div class="actions">
+            <a href="e2ssamplemanager.zip" class="btn" download>⬇️ Download (ZIP, ~230 KB)</a>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title">Features</h2>
+          <div class="card-grid">
+            <div class="card">
+              <h3>↩️ Undo/Redo für alles</h3>
+              <p>Auch Löschen, Ersetzen, Trim und Mono-Konvertierung sind rückgängig machbar (Ctrl+Z / Ctrl+Y).</p>
+            </div>
+            <div class="card">
+              <h3>🛡️ Auto-Backup</h3>
+              <p>Vor jedem Speichern landet automatisch eine Kopie im Backup-Ordner. Atomares Speichern – ein Absturz zerstört nie die Datei.</p>
+            </div>
+            <div class="card">
+              <h3>🖱️ Drag &amp; Drop</h3>
+              <p>WAVs einfach ins Fenster ziehen zum Importieren, Zeilen ziehen zum Umsortieren.</p>
+            </div>
+            <div class="card">
+              <h3>⚡ Batch-Bearbeitung</h3>
+              <p>Mehrere Samples markieren: Kategorie setzen, normalisieren, trimmen, umbenennen, exportieren.</p>
+            </div>
+            <div class="card">
+              <h3>🎚️ Waveform-Editor</h3>
+              <p>Start/Loop/End und bis zu 64 Slices bearbeiten – mit Zoom, ziehbaren Markern und Nulldurchgang-Einrasten.</p>
+            </div>
+            <div class="card">
+              <h3>🌙 Dark Mode</h3>
+              <p>Dunkle Oberfläche als Standard, umschaltbar mit Ctrl+D. SD-Karte wird automatisch erkannt.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title">Screenshots</h2>
+          <div class="card-grid screenshots">
+            <a href="screenshot-main.png" target="_blank" class="card shot"><img src="screenshot-main.png" alt="Hauptfenster im Dark Mode" loading="lazy"></a>
+            <a href="screenshot-editor.png" target="_blank" class="card shot"><img src="screenshot-editor.png" alt="Waveform- und Slice-Editor im Dark Mode" loading="lazy"></a>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title">Installation (Windows)</h2>
+          <div class="row-list">
+            <div class="row"><span class="row-icon">1️⃣</span><span class="row-body"><span class="row-title">Python installieren</span><br><span class="row-sub">Einmalig von python.org – Haken bei „Add python.exe to PATH“ setzen.</span></span></div>
+            <div class="row"><span class="row-icon">2️⃣</span><span class="row-body"><span class="row-title">ZIP entpacken &amp; starten</span><br><span class="row-sub">Start-E2S-Sample-Manager.bat doppelklicken – richtet sich beim ersten Start selbst ein.</span></span></div>
+            <div class="row"><span class="row-icon">3️⃣</span><span class="row-body"><span class="row-title">Optional: echte EXE bauen</span><br><span class="row-sub">build-exe.bat doppelklicken – die fertige E2S-Sample-Manager.exe läuft überall ohne Python.</span></span></div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title">Workflow mit der Electribe</h2>
+          <div class="row-list">
+            <div class="row"><span class="row-icon">🎛️</span><span class="row-body"><span class="row-title">Exportieren</span><br><span class="row-sub">Am Gerät: DATA UTILITY → EXPORT ALL SAMPLE schreibt die e2sSample.all auf die SD-Karte.</span></span></div>
+            <div class="row"><span class="row-icon">💻</span><span class="row-body"><span class="row-title">Bearbeiten</span><br><span class="row-sub">SD-Karte in den Rechner, App starten, „SD-Karte öffnen“ – bearbeiten und speichern (Backup automatisch).</span></span></div>
+            <div class="row"><span class="row-icon">🔁</span><span class="row-body"><span class="row-title">Zurückspielen</span><br><span class="row-sub">SD-Karte zurück in die Electribe und neu starten – die Library wird beim Booten geladen.</span></span></div>
+          </div>
+          <p class="section-sub" style="margin-top:1rem">
+            Open Source (GPL-3.0), basiert auf Oe2sSLE. Vollständige Anleitung liegt als README im ZIP bei.
+          </p>
+          <a href="../../downloads.html" class="btn btn-outline">← Zurück zu Downloads</a>
+        </section>
+
+        <footer>
+          <span>© 2026 Louis Bunt</span>
+          <a href="mailto:braunlouis18@gmail.com">Kontakt</a>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
